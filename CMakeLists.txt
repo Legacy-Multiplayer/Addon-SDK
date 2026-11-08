@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.20)
+project(LegacyPluginSDK VERSION 1.0.0 LANGUAGES NONE)
+add_library(LegacyPluginSDK INTERFACE)
+add_library(Legacy::SDK ALIAS LegacyPluginSDK)
+target_include_directories(LegacyPluginSDK INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}/include")
+target_compile_features(LegacyPluginSDK INTERFACE cxx_std_17)
