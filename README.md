@@ -28,7 +28,7 @@ REGISTER_PLUGIN(CExample)
 Use this repository as a pinned Git submodule. Consumer projects add `SDK` with CMake and link `Legacy::SDK`; the shared `cmake/Plugin.cmake` helper defines `legacy_plugin`. Build with a 32-bit toolchain matching Legacy Server.
 
 ```sh
-git clone --recurse-submodules <consumer-repository-url>
+git clone --recurse-submodules https://github.com/Legacy-Multiplayer/Addon-SDK.git
 # For an existing checkout:
 git submodule update --init --recursive
 ```
